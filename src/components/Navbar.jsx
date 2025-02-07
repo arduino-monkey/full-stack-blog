@@ -7,10 +7,10 @@ const Navbar = () => {
   return (
     <div className="w-full h-16 flex items-center justify-between">
       {/*LOGO*/}
-      <div className="flex items-center gap-4">
-        <Image src="logo.png" w={32} h={32} />
-        <span className="text-2xl font-bold">Blog App</span>
-      </div>
+      <Link to="/" className="flex items-center gap-4">
+          <Image src="logo.png" w={32} h={32} />
+          <span className="text-2xl font-bold">Blog App</span>
+      </Link>
       {/* MOBILE MENU */}
       <div className="md:hidden">
         <div
