@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MainCategories from "../components/mainCategories";
 
 const Homepage = () => {
   return (
@@ -22,7 +23,10 @@ const Homepage = () => {
           </p>
         </div>
         {/*ANIMATED BUTTON*/}
-        <Link to="/write" className="hidden relative md:flex items-center justify-center ml-4">
+        <Link
+          to="/write"
+          className="hidden relative md:flex items-center justify-center ml-4"
+        >
           <svg
             width="200"
             height="200"
@@ -60,6 +64,8 @@ const Homepage = () => {
           </button>
         </Link>
       </div>
+      {/*Main Categories*/}
+      <MainCategories />
     </div>
   );
 };
