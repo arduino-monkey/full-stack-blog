@@ -9,6 +9,7 @@ import {
   SinglePostPage,
   RegisterPage,
   Write,
+  HomePage,
 } from "./pages";
 import { ClerkProvider } from "@clerk/clerk-react";
 
@@ -20,9 +21,9 @@ if (!PUBLISHABLE_KEY) {
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <MainLayout />,
     children: [
+      { path: "/", element: <HomePage /> },
       { path: "/login", element: <LoginPage /> },
       { path: "/posts", element: <PostListPage /> },
       { path: "/:slug", element: <SinglePostPage /> },
