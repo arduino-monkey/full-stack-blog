@@ -2,6 +2,7 @@ import Image from "../components/Image";
 import { Link } from "react-router-dom";
 import PostMenuActions from "../components/PostMenuActions";
 import Search from "../components/Search";
+import Comments from "../components/Comments";
 
 const SinglePostPage = () => {
   return (
@@ -36,78 +37,90 @@ const SinglePostPage = () => {
       {/*Content*/}
       <div className="flex flex-col md:flex-row gap-8 mt-8">
         <div className="lg:text-lg flex flex-col gap-6 text-justify w-10/12">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
-            necessitatibus, facere repellat optio laudantium, natus architecto.
-            Eligendi eius id magni ipsum nobis, eveniet eum nulla eaque
-            quibusdam, officiis beatae, saepe illo iste possimus consequuntur
-            porro provident dolores repudiandae incidunt ea sequi doloribus!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
-            necessitatibus, facere repellat optio laudantium, natus architecto.
-            Eligendi eius id magni ipsum nobis, eveniet eum nulla eaque
-            quibusdam, officiis beatae, saepe illo iste possimus consequuntur
-            porro provident dolores repudiandae incidunt ea sequi doloribus!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
-            necessitatibus, facere repellat optio laudantium, natus architecto.
-            Eligendi eius id magni ipsum nobis, eveniet eum nulla eaque
-            quibusdam, officiis beatae, saepe illo iste possimus consequuntur
-            porro provident dolores repudiandae incidunt ea sequi doloribus!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
-            necessitatibus, facere repellat optio laudantium, natus architecto.
-            Eligendi eius id magni ipsum nobis, eveniet eum nulla eaque
-            quibusdam, officiis beatae, saepe illo iste possimus consequuntur
-            porro provident dolores repudiandae incidunt ea sequi doloribus!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
-            necessitatibus, facere repellat optio laudantium, natus architecto.
-            Eligendi eius id magni ipsum nobis, eveniet eum nulla eaque
-            quibusdam, officiis beatae, saepe illo iste possimus consequuntur
-            porro provident dolores repudiandae incidunt ea sequi doloribus!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
-            necessitatibus, facere repellat optio laudantium, natus architecto.
-            Eligendi eius id magni ipsum nobis, eveniet eum nulla eaque
-            quibusdam, officiis beatae, saepe illo iste possimus consequuntur
-            porro provident dolores repudiandae incidunt ea sequi doloribus!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
-            necessitatibus, facere repellat optio laudantium, natus architecto.
-            Eligendi eius id magni ipsum nobis, eveniet eum nulla eaque
-            quibusdam, officiis beatae, saepe illo iste possimus consequuntur
-            porro provident dolores repudiandae incidunt ea sequi doloribus!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
-            necessitatibus, facere repellat optio laudantium, natus architecto.
-            Eligendi eius id magni ipsum nobis, eveniet eum nulla eaque
-            quibusdam, officiis beatae, saepe illo iste possimus consequuntur
-            porro provident dolores repudiandae incidunt ea sequi doloribus!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
-            necessitatibus, facere repellat optio laudantium, natus architecto.
-            Eligendi eius id magni ipsum nobis, eveniet eum nulla eaque
-            quibusdam, officiis beatae, saepe illo iste possimus consequuntur
-            porro provident dolores repudiandae incidunt ea sequi doloribus!
-          </p>
+          <div className="flex flex-col gap-6">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
+              necessitatibus, facere repellat optio laudantium, natus
+              architecto. Eligendi eius id magni ipsum nobis, eveniet eum nulla
+              eaque quibusdam, officiis beatae, saepe illo iste possimus
+              consequuntur porro provident dolores repudiandae incidunt ea sequi
+              doloribus!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
+              necessitatibus, facere repellat optio laudantium, natus
+              architecto. Eligendi eius id magni ipsum nobis, eveniet eum nulla
+              eaque quibusdam, officiis beatae, saepe illo iste possimus
+              consequuntur porro provident dolores repudiandae incidunt ea sequi
+              doloribus!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
+              necessitatibus, facere repellat optio laudantium, natus
+              architecto. Eligendi eius id magni ipsum nobis, eveniet eum nulla
+              eaque quibusdam, officiis beatae, saepe illo iste possimus
+              consequuntur porro provident dolores repudiandae incidunt ea sequi
+              doloribus!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
+              necessitatibus, facere repellat optio laudantium, natus
+              architecto. Eligendi eius id magni ipsum nobis, eveniet eum nulla
+              eaque quibusdam, officiis beatae, saepe illo iste possimus
+              consequuntur porro provident dolores repudiandae incidunt ea sequi
+              doloribus!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
+              necessitatibus, facere repellat optio laudantium, natus
+              architecto. Eligendi eius id magni ipsum nobis, eveniet eum nulla
+              eaque quibusdam, officiis beatae, saepe illo iste possimus
+              consequuntur porro provident dolores repudiandae incidunt ea sequi
+              doloribus!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
+              necessitatibus, facere repellat optio laudantium, natus
+              architecto. Eligendi eius id magni ipsum nobis, eveniet eum nulla
+              eaque quibusdam, officiis beatae, saepe illo iste possimus
+              consequuntur porro provident dolores repudiandae incidunt ea sequi
+              doloribus!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
+              necessitatibus, facere repellat optio laudantium, natus
+              architecto. Eligendi eius id magni ipsum nobis, eveniet eum nulla
+              eaque quibusdam, officiis beatae, saepe illo iste possimus
+              consequuntur porro provident dolores repudiandae incidunt ea sequi
+              doloribus!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
+              necessitatibus, facere repellat optio laudantium, natus
+              architecto. Eligendi eius id magni ipsum nobis, eveniet eum nulla
+              eaque quibusdam, officiis beatae, saepe illo iste possimus
+              consequuntur porro provident dolores repudiandae incidunt ea sequi
+              doloribus!
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem, perferendis quae? Consequatur, sed nemo quos non est
+              necessitatibus, facere repellat optio laudantium, natus
+              architecto. Eligendi eius id magni ipsum nobis, eveniet eum nulla
+              eaque quibusdam, officiis beatae, saepe illo iste possimus
+              consequuntur porro provident dolores repudiandae incidunt ea sequi
+              doloribus!
+            </p>
+          </div>
+          <Comments />
         </div>
         {/*Side Menu*/}
         <div className="px-4 h-max top-6 sticky w-2/12">
