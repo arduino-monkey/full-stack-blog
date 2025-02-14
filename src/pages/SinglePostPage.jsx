@@ -36,7 +36,7 @@ const SinglePostPage = () => {
       </div>
       {/*Content*/}
       <div className="flex flex-col md:flex-row gap-8 mt-8">
-        <div className="lg:text-lg flex flex-col gap-6 text-justify w-10/12">
+        <div className="lg:text-lg flex flex-col gap-6 text-justify w-10/12 sm:w-[calc(100%-2rem)]">
           <div className="flex flex-col gap-6">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -123,7 +123,7 @@ const SinglePostPage = () => {
           <Comments />
         </div>
         {/*Side Menu*/}
-        <div className="px-4 h-max top-6 sticky w-2/12">
+        <div className="px-4 h-max top-6 sticky w-2/12 hidden md:block">
           <h1 className="mt-4 mb-4 text-sm font-medium">Author</h1>
           <div className="flex gap-4 items-center">
             <Image
